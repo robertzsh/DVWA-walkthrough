@@ -26,7 +26,7 @@ Same workflow, just modify the user payload and password payload from burp
 ```
 **The fastest response is the correct combination of user and pass**
 ![alt text](images/6.png)
-# 2. Brute Force -> High Security Level
+# 3. Brute Force -> High Security Level
 ![alt text](images/7.png)
 ```bash
 Generate Anti CSRF Token
@@ -35,3 +35,15 @@ After some research i found that the Cross-site request forgery (also known as C
 
 **Inspect element to show the user token**
 ![alt text](images/8.png)
+
+``` bash
+Pitchfork attack with the admin username
+Select the payloads -> password and user_token
+At the first payload select the password.txt file and for user_token select Payload type - Recursive grep
+```
+![alt text](images/9.png)
+![alt text](images/10.png)
+![alt text](images/11.png)
+
+We are in 
+![alt text](images/12.png)
