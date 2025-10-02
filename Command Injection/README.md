@@ -48,8 +48,11 @@ ping 127.0.0.2 & ls & hostname & whoami -> useful command
 
 # 3. Command Injection -> High Security Level
 ![alt text](images/8.png)
+
 >The blacklist is bigger and bigger 
+
 ![alt text](images/9.png)
+
 >Function trim() which removes all the spaces was a good hint, just put them together
 ``` bash
 ping 127.0.0.2|ls
