@@ -28,7 +28,7 @@ Here we go
 So this was the low level 
 ![alt text](images/3.png)
 
-# 2. Brute Force -> Medium Security Level
+# 2. Command Injection -> Medium Security Level
 ``` bash
 With ;ls don't get any output so has to change the flow
 Can see that ";" "&" will be replaced with " "
@@ -45,3 +45,13 @@ Solution -> ping 127.0.0.2 &ls
 ping 127.0.0.2 & ls & hostname & whoami -> useful command
 ```
 ![alt text](images/7.png)
+
+# 3. Command Injection -> High Security Level
+![alt text](images/8.png)
+>The blacklist is bigger and bigger 
+![alt text](images/9.png)
+>Function trim() which removes all the spaces was a good hint, just put them together
+``` bash
+ping 127.0.0.2|ls
+```
+![alt text](images/10.png)
